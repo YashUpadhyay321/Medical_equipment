@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 4 - Stethoscope</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome (for icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            z-index: 10;
+        }
+
+        .navbar.sticky-top {
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the full area */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .product-details {
+            margin-top: 30px;
+        }
+
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+
+        .product-rating i {
+            color: #f4c150;
+        }
+
+        .product-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 1.25rem;
+            color: #28a745;
+            margin: 10px 0;
+        }
+
+        .product-description {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        .product-features {
+            list-style-type: none;
+            padding-left: 0;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .product-features li {
+            margin: 5px 0;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            transition: 0.3s ease;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MedCare Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product 4 - Stethoscope -->
+    <div class="container mt-5" id="product4">
+        <h2 class="text-center mb-5">Stethoscope</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card border-0 shadow-lg">
+                    <img src="/project4/asset/images/stehto.jpeg" alt="Stethoscope" class="product-image">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card border-0 shadow-lg product-card">
+                    <div class="card-body">
+                        <h5 class="product-title">Stethoscope</h5>
+                        <div class="product-rating mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i> (4.8/5)
+                        </div>
+                        <p class="product-price">$49.99</p>
+                        <button class="btn-custom">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+
+                        <!-- Description -->
+                        <div class="product-description">
+                            <h6>Description:</h6>
+                            <p>This Stethoscope offers clear, precise sound quality, essential for accurate medical diagnoses. It is designed for medical professionals and is comfortable to wear during long shifts.</p>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="product-features">
+                            <h6>Features:</h6>
+                            <ul>
+                                <li>Clear sound for accurate diagnosis</li>
+                                <li>Durable and comfortable design</li>
+                                <li>High-quality materials</li>
+                                <li>Ideal for doctors and nurses</li>
+                                <li>Affordable and reliable</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <p>&copy; 2025 MedCare Store | All Rights Reserved</p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:support@medcarestore.com">support@medcarestore.com</a> | <i
+                class="fas fa-phone"></i>+123 456 7890</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

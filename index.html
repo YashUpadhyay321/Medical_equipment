@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedCare Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="asset/css/styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">MedCare Store</a>
+
+     
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+     
+      <div class="collapse navbar-collapse d-none d-lg-flex p-3" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pro.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MedCare Store</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pro.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+ <!-- About Us Section with Hero -->
+<section id="about" class="hero text-white position-relative">
+  <div class="hero-overlay"></div>
+  <div class="container text-center d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="hero-content">
+      <h1 class="display-4 font-weight-bold text-shadow mb-3">Welcome to MedCare Store</h1>
+      <p class="lead mb-4 text-shadow">Your one-stop solution for all medical needs</p>
+      <a href="#products" class="btn btn-light btn-lg shadow">Shop Now</a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Products Section -->
+<section id="products" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Products</h2>
+    <div class="row g-4">
+      <!-- Product Cards -->
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-lg flex-fill">
+          <img src="/asset/images/blood.webp" class="card-img-top" alt="Blood Pressure Monitor">
+          <div class="card-body text-center">
+            <h5 class="card-title">Blood Pressure Monitor</h5>
+            <p class="card-text">Reliable BP monitoring at home.</p>
+            <a href="blood.html" class="btn btn-primary shadow-sm">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-lg flex-fill">
+          <img src="/asset/images/tem.jpeg" class="card-img-top" alt="Digital Thermometer">
+          <div class="card-body text-center">
+            <h5 class="card-title">Digital Thermometer</h5>
+            <p class="card-text">Accurate and fast temperature readings.</p>
+            <a href="thermo.html" class="btn btn-primary shadow-sm">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-lg flex-fill">
+          <img src="/asset/images/first.jpeg" class="card-img-top" alt="First Aid Kit">
+          <div class="card-body text-center">
+            <h5 class="card-title">First Aid Kit</h5>
+            <p class="card-text">Essential supplies for emergencies.</p>
+            <a href="first.html" class="btn btn-primary shadow-sm">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-lg flex-fill">
+          <img src="/asset/images/stehto.jpeg" class="card-img-top" alt="Stethoscope">
+          <div class="card-body text-center">
+            <h5 class="card-title">Stethoscope</h5>
+            <p class="card-text">Precise and clear sound quality.</p>
+            <a href="steho.html" class="btn btn-primary shadow-sm">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-lg flex-fill">
+          <img src="/asset/images/mask.jpeg" class="card-img-top" alt="Face Mask">
+          <div class="card-body text-center">
+            <h5 class="card-title">Face Mask</h5>
+            <p class="card-text">High-quality protection.</p>
+            <a href="#" class="btn btn-primary shadow-sm">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-lg flex-fill">
+          <img src="/asset/images/glove.jpeg" class="card-img-top" alt="Medical Gloves">
+          <div class="card-body text-center">
+            <h5 class="card-title">Medical Gloves</h5>
+            <p class="card-text">Durable and safe.</p>
+            <a href="#" class="btn btn-primary shadow-sm">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-lg flex-fill">
+          <img src="/asset/images/wheel.jpeg" class="card-img-top" alt="Wheelchair">
+          <div class="card-body text-center">
+            <h5 class="card-title">Wheelchair</h5>
+            <p class="card-text">Comfortable and durable.</p>
+            <a href="#" class="btn btn-primary shadow-sm">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="card border-0 shadow-lg flex-fill">
+          <img src="/asset/images/oxygen.jpeg" class="card-img-top" alt="Oxygen Mask">
+          <div class="card-body text-center">
+            <h5 class="card-title">Oxygen Mask</h5>
+            <p class="card-text">High-quality respiratory care.</p>
+            <a href="#" class="btn btn-primary shadow-sm">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-5">
+      <a href="pro.html" class="btn btn-primary btn-lg shadow-sm">Load More Products</a>
+    </div>
+  </div>
+</section>
+
+  
+<section id="services" class="py-5" style="background: #f8f9fa;">
+  <div class="container">
+    <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 600; color: #333;">Our Services</h2>
+    <div class="row">
+      <!-- Service 1 -->
+      <div class="col-md-4 mb-4 text-center">
+        <div class="service-card p-4 shadow-lg rounded-3" style="background-color: #fff; transition: all 0.3s ease-in-out; border-left: 5px solid #0d6efd;">
+          <i class="fas fa-truck fs-1 text-primary mb-3 service-icon"></i>
+          <h5 class="mb-3">Home Delivery</h5>
+          <p>Fast and reliable delivery for all your orders.</p>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="col-md-4 mb-4 text-center">
+        <div class="service-card p-4 shadow-lg rounded-3" style="background-color: #fff; transition: all 0.3s ease-in-out; border-left: 5px solid #0d6efd;">
+          <i class="fas fa-headset fs-1 text-primary mb-3 service-icon"></i>
+          <h5 class="mb-3">Customer Support</h5>
+          <p>24/7 assistance for all your queries and concerns.</p>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div class="col-md-4 mb-4 text-center">
+        <div class="service-card p-4 shadow-lg rounded-3" style="background-color: #fff; transition: all 0.3s ease-in-out; border-left: 5px solid #0d6efd;">
+          <i class="fas fa-shield-alt fs-1 text-primary mb-3 service-icon"></i>
+          <h5 class="mb-3">Trusted Quality</h5>
+          <p>High-quality products you can trust.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5" style="background: #f9f9f9;">
+    <div class="container">
+      <h2 class="text-center mb-5" style="font-size: 2.5rem; font-weight: 600; color: #333;">What Our Customers Say</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="testimonial-card p-4 shadow-lg rounded-3" style="background-color: #ffffff; border-left: 5px solid #f0ad4e; transition: transform 0.3s ease-in-out;">
+            <blockquote class="blockquote mb-0">
+              <p style="font-size: 1.1rem; font-style: italic; color: #555;">"MedCare Store provided me with top-notch service. Their delivery was quick, and the products were of excellent quality."</p>
+              <footer class="blockquote-footer text-end" style="font-size: 1.1rem; font-weight: bold; color: #ffffff;  padding: 5px;">John Doe</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="testimonial-card p-4 shadow-lg rounded-3" style="background-color: #ffffff; border-left: 5px solid #f0ad4e; transition: transform 0.3s ease-in-out;">
+            <blockquote class="blockquote mb-0">
+              <p style="font-size: 1.1rem; font-style: italic; color: #555;">"Highly recommend MedCare Store for their reliable and affordable medical supplies. Customer support is outstanding."</p>
+              <footer class="blockquote-footer text-end" style="font-size: 1.1rem; font-weight: bold; color: #ffffff; padding: 5px;">Jane Smith</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact" class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Information -->
+        <div class="col-md-6">
+          <h2 class="mb-3" style="font-size: 2rem;">Contact Us</h2>
+          <p><i class="fas fa-envelope me-2"></i>Email: <a href="mailto:support@medcarestore.com" class="text-white text-decoration-none">support@medcarestore.com</a></p>
+          <p><i class="fas fa-phone-alt me-2"></i>Phone: <a href="tel:+1234567890" class="text-white text-decoration-none">+123 456 7890</a></p>
+          <p><i class="fas fa-map-marker-alt me-2"></i>Address: 123 MedCare Street, Healthy City, HC 45678</p>
+        </div>
+  
+        <!-- Social Media Links -->
+        <div class="col-md-6">
+          <h2 class="mb-3" style="font-size: 2rem;">Follow Us</h2>
+          <div>
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fs-3"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter fs-3"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-instagram fs-3"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in fs-3"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p>&copy; 2025 MedCare Store. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - MedCare Store</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome (for icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            z-index: 10;
+        }
+
+        .navbar.sticky-top {
+            position: sticky;
+            top: 0;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+/* General Product Image Styling */
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Card Styling */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect for Cards */
+.product-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: 0.3s ease-in-out;
+}
+
+/* Button Styling */
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Text Styling */
+.product-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    color: #28a745;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.product-description {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Product Features Styling */
+.product-features {
+    list-style-type: none;
+    padding-left: 0;
+    color: #333;
+    margin-top: 15px;
+}
+
+.product-features li {
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Add bullet icons */
+.product-features li::before {
+    content: "✔";
+    color: #28a745;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Rating Stars */
+.product-rating i {
+    color: #f4c150;
+}
+
+/* Responsive Design Tweaks */
+@media (max-width: 768px) {
+    .product-card {
+        min-height: auto;
+        padding: 15px;
+    }
+    
+    .product-title {
+        font-size: 1.25rem;
+    }
+    
+    .product-price {
+        font-size: 1.1rem;
+    }
+
+    .btn-custom {
+        padding: 8px 16px;
+    }
+}
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MedCare Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Section -->
+    <div class="container mt-5" id="products">
+        <h2 class="text-center mb-5">Our Products</h2>
+        <div class="row g-4 my-5">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg product-card">
+                    <img src="/asset/images/blood.webp" alt="Blood Pressure Monitor" class="product-image">
+                    <div class="card-body">
+                        <h5 class="product-title">Blood Pressure Monitor</h5>
+                        <div class="product-rating mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i> (4.5/5)
+                        </div>
+                        <p class="product-price">$49.99</p>
+                        <button class="btn-custom">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+
+                        <!-- Description -->
+                        <div class="product-description">
+                            <h6>Description:</h6>
+                            <p>This Blood Pressure Monitor allows you to keep track of your health from the comfort of your home. It is reliable, accurate, and easy to use, providing readings in seconds.</p>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="product-features">
+                            <h6>Features:</h6>
+                            <ul>
+                                <li>Large LCD screen for easy reading</li>
+                                <li>Stores up to 100 readings</li>
+                                <li>Adjustable cuff for different arm sizes</li>
+                                <li>Automatic power-off feature</li>
+                                <li>Comes with a 2-year warranty</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg product-card">
+                    <img src="/asset/images/tem.jpeg" alt="Digital Thermometer" class="product-image">
+                    <div class="card-body">
+                        <h5 class="product-title">Digital Thermometer</h5>
+                        <div class="product-rating mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i> (4.7/5)
+                        </div>
+                        <p class="product-price">$15.99</p>
+                        <button class="btn-custom">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+
+                        <!-- Description -->
+                        <div class="product-description">
+                            <h6>Description:</h6>
+                            <p>This Digital Thermometer offers quick and accurate temperature readings, perfect for monitoring health at home or in medical settings.</p>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="product-features">
+                            <h6>Features:</h6>
+                            <ul>
+                                <li>Fast 10-second readings</li>
+                                <li>Easy-to-read display</li>
+                                <li>Water-resistant and easy to clean</li>
+                                <li>Automatic shutoff</li>
+                                <li>Ideal for all age groups</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg product-card">
+                    <img src="/asset/images/first.jpeg" alt="First Aid Kit" class="product-image">
+                    <div class="card-body">
+                        <h5 class="product-title">First Aid Kit</h5>
+                        <div class="product-rating mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i> (4.8/5)
+                        </div>
+                        <p class="product-price">$29.99</p>
+                        <button class="btn-custom">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+
+                        <!-- Description -->
+                        <div class="product-description">
+                            <h6>Description:</h6>
+                            <p>This First Aid Kit includes a comprehensive set of medical supplies to handle basic emergencies and injuries.</p>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="product-features">
+                            <h6>Features:</h6>
+                            <ul>
+                                <li>Includes bandages, gauze, and antiseptic wipes</li>
+                                <li>Compact and portable design</li>
+                                <li>Durable case for safe storage</li>
+                                <li>Perfect for home, car, or travel</li>
+                                <li>FDA-approved medical supplies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg product-card">
+                    <img src="/asset/images/stehto.jpeg" alt="Stethoscope" class="product-image">
+                    <div class="card-body">
+                        <h5 class="product-title">Stethoscope</h5>
+                        <div class="product-rating mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i> (4.5/5)
+                        </div>
+                        <p class="product-price">$39.99</p>
+                        <button class="btn-custom">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+
+                        <!-- Description -->
+                        <div class="product-description">
+                            <h6>Description:</h6>
+                            <p>This Stethoscope is designed for medical professionals, providing clear sound quality for accurate diagnosis and patient monitoring.</p>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="product-features">
+                            <h6>Features:</h6>
+                            <ul>
+                                <li>High acoustic sensitivity for precise diagnostics</li>
+                                <li>Comfortable, adjustable ear tips</li>
+                                <li>Durable tubing for long-lasting use</li>
+                                <li>Available in multiple colors</li>
+                                <li>Lightweight and portable</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg product-card">
+                    <img src="/asset/images/mask.jpeg" alt="Face Mask" class="product-image">
+                    <div class="card-body">
+                        <h5 class="product-title">Face Mask</h5>
+                        <div class="product-rating mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i> (4.6/5)
+                        </div>
+                        <p class="product-price">$7.99</p>
+                        <button class="btn-custom">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+
+                        <!-- Description -->
+                        <div class="product-description">
+                            <h6>Description:</h6>
+                            <p>High-quality protective face mask designed for safety and comfort. Ideal for personal use and public spaces.</p>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="product-features">
+                            <h6>Features:</h6>
+                            <ul>
+                                <li>Soft, breathable material</li>
+                                <li>Multi-layer protection for safety</li>
+                                <li>Adjustable ear loops for a secure fit</li>
+                                <li>Reusable and washable</li>
+                                <li>Available in multiple colors</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-md-4">
+                <div class="card border-0 shadow-lg product-card">
+                    <img src="/asset/images/glove.jpeg" alt="Medical Gloves" class="product-image">
+                    <div class="card-body">
+                        <h5 class="product-title">Medical Gloves</h5>
+                        <div class="product-rating mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i> (4.9/5)
+                        </div>
+                        <p class="product-price">$12.99</p>
+                        <button class="btn-custom">
+                            <i class="fas fa-shopping-cart"></i> Add to Cart
+                        </button>
+
+                        <!-- Description -->
+                        <div class="product-description">
+                            <h6>Description:</h6>
+                            <p>Medical-grade gloves for professionals and personal use. Safe, durable, and flexible for medical procedures or daily tasks.</p>
+                        </div>
+
+                        <!-- Features -->
+                        <div class="product-features">
+                            <h6>Features:</h6>
+                            <ul>
+                                <li>Powder-free and latex-free</li>
+                                <li>Excellent fit and tactile sensitivity</li>
+                                <li>Available in different sizes</li>
+                                <li>Ideal for medical, cleaning, and food handling</li>
+                                <li>Compliant with FDA standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <p>&copy; 2025 MedCare Store | All Rights Reserved</p>
+        <p><i class="fas fa-envelope"></i><a href="mailto:support@medcarestore.com">support@medcarestore.com</a> | <i
+                class="fas fa-phone"></i>+123 456 7890</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
